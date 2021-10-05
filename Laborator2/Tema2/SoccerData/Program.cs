@@ -19,8 +19,12 @@ namespace SoccerData
 
             while ((line = file.ReadLine()) != null)
             {
-                Team currentTeam = new Team(line);
-                TeamList.Add(currentTeam);
+                // Check if it's a line that contains data
+                if(-1 != line.IndexOfAny("12345678".ToCharArray()))
+                {
+                    Team currentTeam = new Team(line);
+                    TeamList.Add(currentTeam);
+                }
             }
 
             file.Close();
