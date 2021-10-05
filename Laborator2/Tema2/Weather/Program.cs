@@ -17,6 +17,9 @@ namespace WeatherData
             System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\Admin\Downloads\weather.dat");
             
             header = file.ReadLine();
+            
+            // Read the line that is empty
+            file.ReadLine();
 
             while ((line = file.ReadLine()) != null)
             {
