@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WeatherData
 {
-    class Weather
+    public class Weather
     {
         string Day;
         double MaxTemperature; 

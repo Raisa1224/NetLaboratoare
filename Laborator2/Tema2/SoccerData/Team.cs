@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SoccerData
 {
-    class Team
+    public class Team
     {
         string Name;
         int P;
