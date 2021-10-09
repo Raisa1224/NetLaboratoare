@@ -1,0 +1,37 @@
+== Kata Questions
+=== 1. To what extent did the design decisions you made when writing the original programs make it easier or harder to factor out common code?
+
+Deoarece am ales un design asemanator pentru ambele clase (Team si Weather) factorizarea a fost mult mai putin dificila.
+
+=== 2. Was the way you wrote the second program influenced by writing the first?
+
+Da, modul in care a fost scris al doilea program a fost influentat de primul deoarece problemele date semanau intre ele ca si cerinta si date de intrare. Astfel am pastrat aceeasi structura pentru a doua clasa creata Team ca si la prima clasa Weather.
+
+=== 3. Is factoring out as much common code as possible always a good thing? Did the readability of the programs suffer because of this requirement? How about the maintainability?
+
+Factorizarea codului nu este, dupa parerea noastra, mereu cel mai bun lucru de facut avand in vedere ca ingreuneaza citirea codului si uneori complica rezolvarea problemei fara a avea un castig suficient de mare. Spre exemplu pentru factorizarea urmatoarelor doua blocuri de cod:
+
+[source, c#]
+----
+foreach(string line in data)
+            {
+                Weather weather = new Weather(line);
+                WeatherList.Add(weather);
+            }
+----
+
+[source, c#]
+----
+foreach (string line in data)
+            {
+                Team team = new Team(line);
+                TeamList.Add(team);
+            }
+----
+ar fi fost necesara folosirea unui template si adaugarea mai multor linii de cod decat am fi factorizat.
+
+=== 4. Ce am invatat din acest Kata?
+
+Tofanel Mihaela Raisa: Din acest Kata am invatat atat importanta cat si dificultatea factorizarii codului. Am invatat sa gasesc similitudinile in metodele a doua clase. Am invatat de asemenea sa decid ce anume este sau nu necesar sa fie factorizat.
+
+Hutanu Ana Maria:
