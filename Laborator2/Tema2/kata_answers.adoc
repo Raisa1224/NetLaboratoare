@@ -1,3 +1,11 @@
+= Laborator 2 - Tema
+
+Grupa 3A1
+
+Tofanel Mihaela Raisa
+
+Hutanu Ana Maria
+
 == Kata Questions
 === 1. To what extent did the design decisions you made when writing the original programs make it easier or harder to factor out common code?
 
@@ -34,4 +42,4 @@ ar fi fost necesara folosirea unui template si adaugarea mai multor linii de cod
 
 Tofanel Mihaela Raisa: Din acest Kata am invatat atat importanta cat si dificultatea factorizarii codului. Am invatat sa gasesc similitudinile in metodele a doua clase. Am invatat de asemenea sa decid ce anume este sau nu necesar sa fie factorizat.
 
-Hutanu Ana Maria:
+Hutanu Ana Maria: Am invatat sa folosesc functii de prelucrare de string-uri precum Convert.ToInt32() si Convert.ToDouble(). De asemenea am invatat despre importanta factorizarii codului.
